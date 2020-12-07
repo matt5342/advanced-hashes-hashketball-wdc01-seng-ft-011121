@@ -183,5 +183,5 @@ def player_numbers(name)
       end
     end
   end
-  numbers
+  numbers.uniq
 end
