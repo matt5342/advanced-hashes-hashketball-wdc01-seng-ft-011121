@@ -129,7 +129,7 @@ end
 def num_points_scored(player)
   
   game_hash.each do |team_type, team_charac|
-    team_type[:players].each do |stats|
+    team_type[:players].each do |stats, stat_value|
       binding.pry
     end
   end
