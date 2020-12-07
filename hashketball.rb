@@ -134,6 +134,7 @@ def num_points_scored(player)
         if value == player
           return stats.fetch(:points)
           break
+        end
       end
     end
   end
