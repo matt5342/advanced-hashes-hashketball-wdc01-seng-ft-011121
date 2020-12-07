@@ -190,7 +190,7 @@ def player_stats(name)
   game_hash.each do |team_type, team_charac|
     game_hash[team_type][:players].each do |stats|
       stats.each do |key, value|
-        if value == player 
+        if value == name 
           return stats
           break
         end
