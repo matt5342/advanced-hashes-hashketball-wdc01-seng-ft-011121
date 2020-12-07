@@ -170,6 +170,12 @@ def team_names
     names << game_hash[team_type][:team_name]
   end
   names
-    
-  
 end
+
+def player_numbers(name)
+  number = []
+  game_hash.each do |team_type, team_charac|
+    if game_hash[team_type][:team_name] == name
+      game_hash[team_type][:players].each do |stats|
+        stats.each do |key, value|
+          number << stats.fetch(:)
