@@ -128,6 +128,10 @@ end
 
 def num_points_scored(player)
   
-  
+  game_hash.each do |team_type, team_chars|
+    team_chars.each do |stat_type, stat|
+      binding.pry
+    end
+  end
   
 end
