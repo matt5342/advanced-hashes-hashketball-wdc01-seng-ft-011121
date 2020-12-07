@@ -205,8 +205,7 @@ def big_shoe_rebounds
           size = stats.fetch(:shoe)
        
         end
-        
+                 return stats.fetch(:rebounds)
     end
-         return stats.fetch(:rebounds)
   end
 end
