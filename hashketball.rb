@@ -179,6 +179,7 @@ def player_numbers(name)
       game_hash[team_type][:players].each do |stats|
         stats.each do |key, value|
           numbers << stats.fetch(:number)
+          binding.pry
         end
       end
     end
