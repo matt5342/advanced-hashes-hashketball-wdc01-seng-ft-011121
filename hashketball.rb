@@ -168,6 +168,8 @@ def team_names
   names = []
   game_hash.each do |team_type, team_charac|
     names << game_hash[team_type][:team_name]
+  end
+  names
     
   
 end
