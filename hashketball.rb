@@ -173,9 +173,14 @@ def team_names
 end
 
 def player_numbers(name)
-  number = []
+  numbers = []
   game_hash.each do |team_type, team_charac|
     if game_hash[team_type][:team_name] == name
       game_hash[team_type][:players].each do |stats|
         stats.each do |key, value|
-          number << stats.fetch(:)
+          numbers << stats.fetch(:number)
+        end
+      end
+    end
+  end
+end
