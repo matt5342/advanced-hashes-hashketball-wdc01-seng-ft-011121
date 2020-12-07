@@ -133,7 +133,7 @@ def num_points_scored(player)
       stats.each do |key, value|
         if value == player
           return stats.fetch(:points)
-      binding.pry
+          break
       end
     end
   end
