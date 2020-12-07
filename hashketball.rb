@@ -204,9 +204,9 @@ def big_shoe_rebounds
         if stats.fetch(:shoe) > size
           binding.pry
           size = stats.fetch(:shoe)
-          return stats.fetch(:rebounds)
+       
         end
     end
   end
-  
+     return stats.fetch(:rebounds)
 end
