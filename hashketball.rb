@@ -185,3 +185,6 @@ def player_numbers(name)
   end
   numbers.uniq
 end
+
+def player_stats(name)
+  
