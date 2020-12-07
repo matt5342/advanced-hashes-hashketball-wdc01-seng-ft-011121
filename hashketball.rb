@@ -204,7 +204,7 @@ def big_shoe_rebounds
       stats.each do |key, value|
         if stats.fetch(:shoe) > size
           size = stats.fetch(:shoe)
-          stats.fetch(:player_name)
+          stats.fetch(:rebounds)
         end
       end
     end
