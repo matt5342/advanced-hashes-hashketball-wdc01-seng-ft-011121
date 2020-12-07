@@ -145,6 +145,9 @@ def shoe_size(player)
     game_hash[team_type][:players].each do |stats|
       stats.each do |key, value|
         if value == player
-          return stats.fetch(:shoe_size)
-  
+          return stats.fetch(:shoe)
+          break
+        end
+      end
+    end
 end
