@@ -202,9 +202,9 @@ def big_shoe_rebounds
   game_hash.each do |team_type, team_charac|
     game_hash[team_type][:players].each do |stats|
         if stats.fetch(:shoe) > size
+          binding.pry
           size = stats.fetch(:shoe)
           return stats.fetch(:rebounds)
-          binding.pry
         end
     end
   end
