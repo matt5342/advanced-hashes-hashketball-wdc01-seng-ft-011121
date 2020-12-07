@@ -132,7 +132,7 @@ def num_points_scored(player)
     game_hash[team_type][:players].each do |stats|
       stats.each do |key, value|
         if value == player
-          return game_hash[team_type][:players][]
+          return stats.fetch(points)
       binding.pry
       end
     end
